@@ -1,0 +1,11 @@
+[package]
+name = "wreck"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+embedded-io = "0.6.1"
+iced-x86 = { version = "1.21.0", default-features = false, optional = true, features = ["code_asm", "no_std"] }
+
+[features]
+iced-x86 = ["dep:iced-x86"]
